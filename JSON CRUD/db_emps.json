@@ -1,0 +1,10 @@
+{
+  "emps": 
+   [
+    { "Empno": 10, "Ename": "John", "Job": "Manager", "Sal": 60000, "Deptno": 101},
+    { "Empno": 20, "Ename": "Brett", "Job": "Admin", "Sal": 20000, "Deptno": 204},
+    { "Empno": 30, "Ename": "William", "Job": "Developer", "Sal": 50000, "Deptno": 308},
+    { "Empno": 40, "Ename": "Kevin", "Job": "Tester", "Sal": 30000, "Deptno": 406},
+    { "Empno": 50, "Ename": "Scott", "Job": "Analyst", "Sal": 45000, "Deptno": 503}
+  ]
+}

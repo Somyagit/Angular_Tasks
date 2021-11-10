@@ -1,0 +1,38 @@
+<h3>CRUD Operations on  Server Data (json-server as backend)</h3>
+<hr/>
+
+<input type="text" [disabled]="isDisabled"  [(ngModel)]="empno"  placeholder="Empno"  />
+<input type="text"  [(ngModel)]="ename"  placeholder="Ename"  />
+<input type="text"  [(ngModel)]="job"  placeholder="Job"  />
+<input type="text"  [(ngModel)]="sal"  placeholder="Salary"  />
+<input type="text"  [(ngModel)]="deptno"  placeholder="Dept No"  />
+<hr/>
+
+<input type="button"  value="Get Employee" (click)="getEmp_click()"  />
+<input type="button"  value="Add Employee" (click)="addEmp_click()"  />
+<input type="button"  value="Update Employee" (click)="updateEmp_click()"  />
+<br/><br/>
+
+<table border="2" cellspacing="0"  cellpadding="5" width="800">
+<tr>
+      <th>Employee Number</th>
+      <th>Employee Name</th>
+      <th>Job</th>
+      <th>Salary</th>
+      <th>Dept No</th>
+      <th> </th>
+</tr>
+
+<tr *ngFor="let emp of empArray">
+    <td> {{emp.empno}} </td>
+    <td> {{emp.ename}} </td>
+    <td> {{emp.job}} </td>
+    <td> {{emp.sal}} </td>
+    <td> {{emp.deptno}} </td>
+    <td>
+        <a  href="javascript:void(0);"  (click)="selectEmp_click( emp.empno  )">Select</a> |
+        <a  href="javascript:void(0);"  (click)="removeEmp_click( emp.empno  )">Remove</a>
+    </td>
+</tr>
+
+</table>
